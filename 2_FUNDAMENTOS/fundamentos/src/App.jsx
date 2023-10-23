@@ -5,6 +5,8 @@ import FirstComponents from './components/FirstComponents'
 import TemplateExpression from './components/TemplateExpression'
 // 5 hierarquia de componentes
 import Espiao from './components/Espiao'
+// 6 eventos
+import Event from './components/Event'
 
 function App() {
 
@@ -15,6 +17,7 @@ function App() {
       <FirstComponents/>
       <TemplateExpression/>
       <Espiao/>
+      <Event/>
     </div>
   )
 }

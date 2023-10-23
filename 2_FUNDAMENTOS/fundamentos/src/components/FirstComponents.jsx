@@ -6,6 +6,7 @@ const FirstComponents = () => {
   return (
     // teste comentário fora do jsx
     <div>
+      <Espiao/>
       <h2>Primeiro componente que tenho noção!</h2>
       {/* comentário */}
     </div>
