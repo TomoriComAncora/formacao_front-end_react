@@ -8,6 +8,12 @@ import DataObj from "./components/DataObj";
 
 // 4 renderização de lista
 import ListRender from "./components/ListRender";
+
+// 7 renderização condicional
+import CondicionalRender from "./components/CondicionalRender";
+
+// 8 props
+import ShowUserName from "./components/ShowUserName";
 function App() {
   return (
     <div style={{ paddingBottom: "500px" }}>
@@ -20,6 +26,10 @@ function App() {
       <DataObj />
       {/* 4 renderização de lista */}
       <ListRender/>
+      {/* 7 render condicional */}
+      <CondicionalRender/>
+      {/* 8 props */}
+      
     </div>
   );
 }
