@@ -7,6 +7,12 @@ const DataObj = () => {
 
   const [contador, setContador] = useState(0);
 
+  const teste = ()=>{
+    setContador(contador + 1);
+  }
+
+
+
   return (
     <div>
       <div>
@@ -19,7 +25,7 @@ const DataObj = () => {
       </div>
       <div className="contador">
         <p>O contador está em {contador}</p>
-        <button onClick={()=> setContador(contador + 1)}>Contar</button>
+        <button onClick={teste}>Contar</button>
       </div>
     </div>
   );
