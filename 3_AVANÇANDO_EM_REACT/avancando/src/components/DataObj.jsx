@@ -10,9 +10,6 @@ const DataObj = () => {
   const teste = ()=>{
     setContador(contador + 1);
   }
-
-
-
   return (
     <div>
       <div>
