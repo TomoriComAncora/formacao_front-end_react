@@ -1,0 +1,7 @@
+.titulo{
+    color: brown;
+    background-color: black;
+    border: 3px solid brown;
+    border-radius: 6px;
+    padding: 1rem;
+}

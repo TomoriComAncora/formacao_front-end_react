@@ -1,24 +1,24 @@
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-  margin-bottom: 500px;
+body {
+  padding-bottom: 500px;
 }
 
-h1{
+h1 {
   color: #f00;
 }
 
 /* 5 classe dinâmica */
-.red-title{
+.red-title {
   font-size: 50px;
   color: #f00;
   background-color: #000;
 }
 
-.title{
+.title {
   font-size: 5rem;
 }
