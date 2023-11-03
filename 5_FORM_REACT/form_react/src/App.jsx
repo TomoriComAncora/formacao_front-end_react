@@ -8,7 +8,7 @@ function App() {
       <div className='App'>
         <h1>Form em React</h1>
         {/* 1 criando form */}
-        <MyForm/>
+        <MyForm userName = "Lucas" userEmail = "lucas@email.com"/>
       </div>
   )
 }
