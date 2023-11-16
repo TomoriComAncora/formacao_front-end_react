@@ -9,6 +9,9 @@ function MyForm({userName, userEmail}) {
   // 8 descrição do usuário
   const [bio, setBio] = useState("");
 
+  // 9 select 
+  const [role, setRole] = useState("");
+
   const handleName = (e) => {
     setName(e.target.value);
   };
@@ -18,12 +21,13 @@ function MyForm({userName, userEmail}) {
   // 5 envio de formulário
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("seu nome:",name, "\n seu email:", email, "\n sua Bio é:", bio);
+    console.log("seu nome:",name, "\n seu email:", email, "\n sua Bio é:", bio, "\n sua função é:", role);
 
     // 7 limpando formulário
     setName("");
     setEmail("");
     setBio("");
+    setRole("");
   };
 
   return (
@@ -59,6 +63,15 @@ function MyForm({userName, userEmail}) {
         <label>
           <span>Bio:</span>
           <textarea name="bio" placeholder="Descrição do usuário" onChange={(e)=> setBio(e.target.value)} value={bio}></textarea>
+        </label>
+        {/* 9 select */}
+        <label>
+          <span>Função do sistema</span>
+          <select name="role" onChange={(e)=> setRole(e.target.value)} value={role}>
+            <option value="usuario">Usuário</option>
+            <option value="editor">Editor</option>
+            <option value="adm">Administrador</option>
+          </select>
         </label>
         <input type="submit" value="Enviar" />
       </form>
