@@ -21,28 +21,28 @@
       "id": 8
     },
     {
-      "name": "Impressora",
-      "price": "2500",
+      "name": "Mouse",
+      "price": "79,90",
       "id": 9
     },
     {
-      "name": "Monitor",
-      "price": "860,90",
+      "name": "teclado",
+      "price": "599,99",
       "id": 10
     },
     {
-      "name": "Gabinete",
-      "price": "150",
+      "name": "teclado",
+      "price": "599,99",
       "id": 11
     },
     {
-      "name": "headset",
-      "price": "105,50",
+      "name": "teclado",
+      "price": "599,99",
       "id": 12
     },
     {
-      "name": "novo post",
-      "price": "2",
+      "name": "teclado",
+      "price": "599,99",
       "id": 13
     }
   ]

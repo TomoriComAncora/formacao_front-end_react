@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useFetch } from "./hooks/useFetch";
+import Loading from "./components/Loading";
 import "./App.css";
 
 const url = "http://localhost:3000/products";
@@ -9,7 +10,7 @@ function App() {
   const [products, setProducts] = useState([]);
 
   // 4 - custom hooks
-  const { data: itens, httpConfig } = useFetch(url);
+  const { data: itens, httpConfig, loading } = useFetch(url);
 
   // useEffect(() => {
   //   async function getData() {
@@ -61,7 +62,9 @@ function App() {
   return (
     <div className="app">
       <h1>HTTP em React</h1>
-      {/* 1 resgatando dados */}
+      {/* 6 - loading */}
+      {loading && <Loading/>}
+      {/* 1 - resgatando dados */}
       <ul>
         {itens &&
           itens.map((product) => (
@@ -90,7 +93,10 @@ function App() {
               onChange={(e) => setPrice(e.target.value)}
             />
           </label>
-          <input type="submit" value={"Enviar"} />
+          {/* <input type="submit" value={"Enviar"} /> */}
+          {/* 7 - loading no post */}
+          {loading && <input type="submit" disabled value={"Aguarde"}/>}
+          {!loading && <input type="submit" value={"Enviar"}/>}
         </form>
       </div>
     </div>
