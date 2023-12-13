@@ -1,20 +1,49 @@
-.loading{
-    max-width: 500px;
-    max-height: 350px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.modal {
+  width: 500px;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.1);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.loading p{
-    font-size: 3rem;
-    color: #a7c957;
+.loading {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background: transparent;
+  border: 3px solid #3c3c3c;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 120px;
+  font-size: 1.3rem;
+  color: #e3e3e3;
+  letter-spacing: 4px;
+  text-shadow: 0 0 10px #e3e3e3;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.progress{
-    height: 100px;
-    width: 100px;
-    border: 1px solid #a7c957;
-    border-radius: 50%;
+.loading:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  border-top: 3px solid #e3e3e3;
+  border-right: 3px solid #e3e3e3;
+  border-radius: 50%;
+  animation:is-rotating 2s linear infinite;
 }
+
+
+
+
+@keyframes is-rotating {
+    to {
+      transform: rotate(1turn);
+    }
+  }

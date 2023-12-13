@@ -2,11 +2,13 @@ import "./Loading.css";
 
 function Loading() {
   return (
-    <div className="loading">
-        <p>Carregando...</p>
-        <div className='progress'></div>
+    <div className="modal">
+      <div className="loading">
+        <p>Carregando</p>
+        <span className="progress"></span>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Loading
+export default Loading;

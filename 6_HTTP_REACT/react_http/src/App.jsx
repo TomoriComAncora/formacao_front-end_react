@@ -10,7 +10,7 @@ function App() {
   const [products, setProducts] = useState([]);
 
   // 4 - custom hooks
-  const { data: itens, httpConfig, loading } = useFetch(url);
+  const { data: itens, httpConfig, loading, error } = useFetch(url);
 
   // useEffect(() => {
   //   async function getData() {
@@ -64,6 +64,8 @@ function App() {
       <h1>HTTP em React</h1>
       {/* 6 - loading */}
       {loading && <Loading/>}
+      {/* 7 - tratamento de erros */}
+      {error && <p>{error}</p>}
       {/* 1 - resgatando dados */}
       <ul>
         {itens &&
