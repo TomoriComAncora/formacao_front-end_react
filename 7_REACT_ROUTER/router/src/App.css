@@ -60,4 +60,5 @@ footer{
   margin-top: 3rem;
   padding: 1rem 0;
   background-color: #888;
+  min-width: 1360px;
 }

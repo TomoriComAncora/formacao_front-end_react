@@ -1,17 +1,13 @@
 import './App.css'
 import { Outlet } from 'react-router-dom'
+// 5 link entre páginas
+import Navbar from './routes/components/Navbar'
 
 function App() {
 
   return (
     <div className="app">
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Contato</li>
-          <li>Sobre nós</li>
-        </ul>
-      </nav>
+      <Navbar/>
       <Outlet/>
       <footer>
         <h2>Volte sempre</h2>
