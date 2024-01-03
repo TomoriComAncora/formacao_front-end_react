@@ -9,7 +9,6 @@ function ErrorPage() {
         <h1>Ops!</h1>
         <p>Você teve um erro!</p>
         <p>{error.statusText}</p>
-        <p>{error.error.message}</p>
         <p>{error.status}</p>
     </div>
   )
