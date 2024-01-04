@@ -42,7 +42,7 @@
 
 nav{
   background-color: #888;
-  min-width: 1300px;
+  max-width: 1000px;
   padding: .2rem .9rem;
   display: flex;
   justify-content: space-around;
@@ -57,9 +57,10 @@ footer{
   margin-top: 3rem;
   padding: 1rem 0;
   background-color: #888;
-  min-width: 1360px;
+  min-width: 1000px;
 }
 
 .products{
   margin: 0 auto;
+  padding: 1rem;
 }
