@@ -14,6 +14,8 @@ import ErrorPage from './routes/ErrorPage.jsx'
 import Home from './routes/Home.jsx'
 // 7 rota dinâminca
 import Product from './routes/Product.jsx'
+// 8 rota aninhada
+import Info from './routes/Info.jsx'
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,11 @@ const router = createBrowserRouter([
       {
         path: "products/:id",
         element: <Product/>
+      },
+      // 8 rotas aninhadas
+      {
+        path: "products/:id/info",
+        element: <Info/>,
       }
     ]
   },

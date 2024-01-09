@@ -1,5 +1,5 @@
 import { useFetch } from "../hooks/useFetch"
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 
 function Product() {
     const {id} = useParams();
@@ -9,7 +9,7 @@ function Product() {
     const {data: product} = useFetch(url);
 
     if(!product){
-        return <p>Carregando...</p>
+        return <h1>Carregando...</h1>
     }
     
     console.log(product);
@@ -20,6 +20,8 @@ function Product() {
         <div>
             <h1>Nome: {product.name}</h1>
             <p>Preço: {product.price}</p>
+            {/* 8 rota aninhada */}
+            <Link to={`/products/${product.id}/info`}>Mais informações</Link>
         </div>
     </>
   )
