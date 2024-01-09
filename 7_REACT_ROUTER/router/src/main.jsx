@@ -5,7 +5,7 @@ import './index.css'
 import Contact from './routes/Contact.jsx'
 
 // 1 configurando router
-import {createBrowserRouter, RouterProvider, Route} from "react-router-dom";
+import {createBrowserRouter, RouterProvider, Route, Navigate} from "react-router-dom";
 
 // 2 pagina de erro
 import ErrorPage from './routes/ErrorPage.jsx'
@@ -16,6 +16,8 @@ import Home from './routes/Home.jsx'
 import Product from './routes/Product.jsx'
 // 8 rota aninhada
 import Info from './routes/Info.jsx'
+// 9 search
+import Search from './routes/Search.jsx'
 
 const router = createBrowserRouter([
   {
@@ -40,6 +42,16 @@ const router = createBrowserRouter([
       {
         path: "products/:id/info",
         element: <Info/>,
+      },
+      // 9 search
+      {
+        path: "search",
+        element: <Search/>,
+      },
+      // 10 redirect
+      {
+        path: "teste",
+        element: <Navigate to={"/contact"}/>
       }
     ]
   },
